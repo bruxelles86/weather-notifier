@@ -1,0 +1,22 @@
+{
+  "name": "weather-notifier",
+  "version": "1.0.0",
+  "description": "an app to trigger alerts for weather conditions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bruxelles86/weather-notifier.git"
+  },
+  "author": "Will Gant // Rob Jones",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bruxelles86/weather-notifier/issues"
+  },
+  "homepage": "https://github.com/bruxelles86/weather-notifier#readme",
+  "dependencies": {
+    "jasmine": "^2.7.0"
+  }
+}

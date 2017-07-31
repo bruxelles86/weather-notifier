@@ -5,10 +5,18 @@ const WeatherGetter = require('../src/WeatherGetter.js')
 describe('weatherGetter', function() {
   it('brings back weather data from api', function(done) {
     var weatherGetter = new WeatherGetter();
-    var location = 'Bruges';
-    weatherGetter.getApiData(location).then(function(apiResponse) {
+    weatherGetter.getApiData('London').then(function(apiResponse) {
       expect(apiResponse).toBeTruthy();
       done();
     });
   }, 5000);
+  
+  it('brings back weather for a given city', function(done) {
+    var weatherGetter = new WeatherGetter();
+    weatherGetter.getApiData('Paris').then(function(apiResponse) {
+      expect(apiResponse).toContain('Paris')
+      done();
+    });
+  }, 5000)
 })
+

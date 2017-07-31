@@ -12,4 +12,3 @@ describe('weatherGetter', function() {
     });
   }, 5000);
 })
-

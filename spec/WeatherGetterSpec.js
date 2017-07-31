@@ -13,8 +13,8 @@ describe('weatherGetter', function() {
   
   it('brings back weather for a given city', function(done) {
     var weatherGetter = new WeatherGetter();
-    weatherGetter.getApiData('Paris').then(function(apiResponse) {
-      expect(apiResponse).toContain('Paris')
+    weatherGetter.getApiData('Johannesburg').then(function(apiResponse) {
+      expect(apiResponse).toContain('Johannesburg')
       done();
     });
   }, 5000)

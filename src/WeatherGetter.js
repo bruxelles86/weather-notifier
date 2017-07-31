@@ -4,9 +4,9 @@ function WeatherGetter() {
 
 };
 
-WeatherGetter.prototype.getApiData = function() {
+WeatherGetter.prototype.getApiData = function(city) {
     var promise = new Promise(function(resolve, reject) {
-      var url = 'http://api.worldweatheronline.com/premium/v1/weather.ashx?key=d1f3365447a2494cb8b115449170706&q=London&format=json&num_of_days=20'
+      var url = `http://api.worldweatheronline.com/premium/v1/weather.ashx?key=d1f3365447a2494cb8b115449170706&q=${city}&format=json&num_of_days=20`
 
 
       http.get(url, (res) => {

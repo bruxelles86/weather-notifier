@@ -1,4 +1,4 @@
-const weatherGetter = require('../src/WeatherGetter.js')
+const WeatherGetter = require('../src/WeatherGetter.js')
 
 // request at a specific location- test for response containing location
 
@@ -12,3 +12,4 @@ describe('weatherGetter', function() {
     });
   }, 5000);
 })
+

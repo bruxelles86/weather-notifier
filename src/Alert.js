@@ -7,6 +7,4 @@ function Alert(locations, temperature, dates) {
 }
 
 
-
-
 module.exports = Alert;

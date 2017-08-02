@@ -39,9 +39,9 @@ apiStubParis =
 }
 apiResponses = [apiStubParis, apiStubLondon]
 
-alert1 = {locations: ['London'], dates: ["2017-08-20"], conditions: { temperature: 25 } }
+alert1 = { locations: ['London'], dates: ["2017-08-20"], conditions: { temperature: 25 } }
 
-alert2 = {locations: ['Paris'], dates: ["2017-08-20"], conditions: { temperature: 25 } }
+alert2 = { locations: ['Paris'], dates: ["2017-08-20"], conditions: { temperature: 25 } }
 
 alertsStub = [alert1, alert2]
 

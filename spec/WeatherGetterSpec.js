@@ -9,7 +9,7 @@ describe('weatherGetter', function() {
       expect(apiResponse).toBeTruthy();
       done();
     });
-  }, 5000);
+  }, 10000);
   
   it('brings back weather for a given city', function(done) {
     var weatherGetter = new WeatherGetter();
@@ -17,6 +17,6 @@ describe('weatherGetter', function() {
       expect(apiResponse).toContain('Johannesburg')
       done();
     });
-  }, 5000)
+  }, 10000)
 })
 
